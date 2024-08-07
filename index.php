@@ -35,7 +35,7 @@
                         <p>Hi, my name is</p>
                         <h2 class="large-name">Nhan (Kevin) Mai</h2>
                         <p>Front-End Web Developer</p>
-                        <h1>BRB Page is Under Construction</h1>
+                        <h1>BRB Page is Under Construction!</h1>
                     </div>
                     <div class="hero-right">
                         <img src="./images/profile.jpg">
