@@ -43,6 +43,16 @@
                 </div>
             </div>
         </section>    
+
+        <section class="about-me">
+        </section>
+
+        <section class="experience">
+        </section>
+
+        <section class="work-portfolio">
+        </section>
+
         <footer class="site-footer">
             <p>&copy; 2023 Kevin Mai</p>
         </footer>
