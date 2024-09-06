@@ -5,8 +5,8 @@
         <script src="/js/functions.js"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;800&family=Martel+Sans:wght@400;600;700;800&family=Varela+Round&display=swap" rel="stylesheet">
-        <link rel="stylesheet/less" type="text/css" href="css/styles.less" /> 
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="dist/css/style.css" /> 
         <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,30 +16,25 @@
 
     <body>
         <header>
-            <div class="container">
-                <div class="top">
-                    <div class="top-navi">
-                        <a href="about"><span class="navi-number">01.</span> About</a>
-                        <a href="experience"><span class="navi-number">02.</span> Experience</a>
-                        <a href="work"><span class="navi-number">03.</span> Work</a>
-                        <a href="contact"><span class="navi-number">04.</span> Contact</a>
+            <div id="main-header">
+                <div class="container">
+                    <div class="top">
+                        <div class="top-navi">
+                            <a href="about"><span class="navi-number">01.</span> About</a>
+                            <a href="experience"><span class="navi-number">02.</span> Experience</a>
+                            <a href="work"><span class="navi-number">03.</span> Work</a>
+                            <a href="contact"><span class="navi-number">04.</span> Contact</a>
+                        </div>
                     </div>
                 </div>
             </div>
-
         </header>
         <section class="hero">
             <div class="container">
                 <div class="hero-flex">
                     <div class="hero-left">
-                        <p>Hi, my name is</p>
+                        <p>Hello,</p>
                         <h2 class="large-name">Nhan (Kevin) Mai</h2>
-                        <p>Front-End Web Developer</p>
-                        <p>My name is Kevin Mai, a resourceful Front End SEO Web Developer bringing in-depth knowledge of the latest technology trends to produce clean website design. Experience handling complex HTML and CSS coding, design, and extensions to meet the organizations front-facing internet needs, while also implementing SEO best practices to websites. Detail-oriented collaboration with others to define project expectations and demand. Hands-on testing and debugging to address inconsistencies and maintain performance thresholds.
-                        </p>
-                    </div>
-                    <div class="hero-right">
-                        <img src="./images/profile.jpg">
                     </div>
                 </div>
             </div>
@@ -47,19 +42,103 @@
 
         <section class="about-me">
             <div class="container">
-                <h2>About Me</h2>
+                <div id="about-details">
+                    <div id="about-left">
+                        <h2>About Me</h2>
+                        <p>Front-End Web Developer</p>
+                        <p>My name is Kevin Mai, a resourceful Front End SEO Web Developer bringing in-depth knowledge of the latest technology trends to produce clean website design. Experience handling complex HTML and CSS coding, design, and extensions to meet the organizations front-facing internet needs, while also implementing SEO best practices to websites. Detail-oriented collaboration with others to define project expectations and demand. Hands-on testing and debugging to address inconsistencies and maintain performance thresholds.
+                        </p>
+                    </div>
+                    <div id="about-right">
+                        <img src="./images/profile.jpg">
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="experience">
+        <section class="skills">
             <div class="container">
                 <h3>Experience</h3>
             </div>
         </section>
 
         <section class="work-portfolio">
+            <h3>Projects</h3>
             <div class="container">
-                <h3>Portfolio</h3>
+                <div id="portfolio-work">
+                    <div class="portfolio-display">
+                        <h2>OnTime59</h2>
+                        <div class="portfolio-image">
+                            <img src="images/ontime59.png">
+                        </div>
+                        <div class="portfolio-details">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt volutpat ex, sed maximus diam lobortis sed. Suspendisse elementum ut nunc vitae porttitor. Nunc semper tortor dui, sed condimentum elit vehicula vel. Sed pretium, arcu vel tristique porttitor, nunc ipsum tristique ante, vitae tempus velit dolor consectetur libero. </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-display">
+                        <h2>Hero</h2>
+                        <div class="portfolio-image">
+                            <img src="images/Hero.png">
+                        </div>
+                        <div class="portfolio-details">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt volutpat ex, sed maximus diam lobortis sed. Suspendisse elementum ut nunc vitae porttitor. Nunc semper tortor dui, sed condimentum elit vehicula vel. Sed pretium, arcu vel tristique porttitor, nunc ipsum tristique ante, vitae tempus velit dolor consectetur libero. </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-display">
+                        <h2>Rick Shipley</h2>
+                        <div class="portfolio-image">
+                            <img src="images/rick-shipley.png">
+                        </div>
+                        <div class="portfolio-details">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt volutpat ex, sed maximus diam lobortis sed. Suspendisse elementum ut nunc vitae porttitor. Nunc semper tortor dui, sed condimentum elit vehicula vel. Sed pretium, arcu vel tristique porttitor, nunc ipsum tristique ante, vitae tempus velit dolor consectetur libero. </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-display">
+                        <h2>OnTime59 ALP</h2>
+                        <div class="portfolio-image">
+                            <img src="images/ontime59-alp.png">
+                        </div>
+                        <div class="portfolio-details">
+                            <p>hello there hi hi </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-display">
+                        <h2>WelBorn Garage Landing Page</h2>
+                        <div class="portfolio-image">
+                            <img src="images/welborn.png">
+                        </div>
+                        <div class="portfolio-details">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt volutpat ex, sed maximus diam lobortis sed. Suspendisse elementum ut nunc vitae porttitor. Nunc semper tortor dui, sed condimentum elit vehicula vel. Sed pretium, arcu vel tristique porttitor, nunc ipsum tristique ante, vitae tempus velit dolor consectetur libero.</p>
+                        </div>
+                    </div>
+                    <div class="portfolio-display">
+                        <h2>Peter Levi</h2>
+                        <div class="portfolio-image">
+                            <img src="images/peter-levi.png">
+                        </div>
+                        <div class="portfolio-details">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt volutpat ex, sed maximus diam lobortis sed. Suspendisse elementum ut nunc vitae porttitor. Nunc semper tortor dui, sed condimentum elit vehicula vel. Sed pretium, arcu vel tristique porttitor, nunc ipsum tristique ante, vitae tempus velit dolor consectetur libero. </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-display">
+                        <h2>Weeks Home Services</h2>
+                        <div class="portfolio-image">
+                            <img src="images/weeks.png">
+                        </div>
+                        <div class="portfolio-details">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt volutpat ex, sed maximus diam lobortis sed. Suspendisse elementum ut nunc vitae porttitor. Nunc semper tortor dui, sed condimentum elit vehicula vel. Sed pretium, arcu vel tristique porttitor, nunc ipsum tristique ante, vitae tempus velit dolor consectetur libero. </p>
+                        </div>
+                    </div>
+                    <div class="portfolio-display">
+                        <h2>Cool Touch</h2>
+                        <div class="portfolio-image">
+                            <img src="images/cool-touch.png">
+                        </div>
+                        <div class="portfolio-details">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt volutpat ex, sed maximus diam lobortis sed. Suspendisse elementum ut nunc vitae porttitor. Nunc semper tortor dui, sed condimentum elit vehicula vel. Sed pretium, arcu vel tristique porttitor, nunc ipsum tristique ante, vitae tempus velit dolor consectetur libero. </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 

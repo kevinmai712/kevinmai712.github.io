@@ -6,7 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600;800&family=Martel+Sans:wght@400;600;700;800&family=Varela+Round&display=swap" rel="stylesheet">
-        <link rel="stylesheet/less" type="text/css" href="css/styles.less" /> 
+        <link rel="stylesheet/less" type="text/css" href="css/styles.scss" /> 
         <script src="https://cdn.jsdelivr.net/npm/less@4.1.1" ></script>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
