@@ -124,6 +124,9 @@ body{
                         font-size: 35px;
                         font-weight: 200;
                     }
+                    h2{
+                        animation: slideInLeft 0.75s ease both;
+                    }
                     p{
                         color: #616161;
                         font-weight: 400;
@@ -211,7 +214,7 @@ body{
         }
     }
     footer{
-        background-color:#04c2c9 ;
+        background-color:$primarycolor ;
         position: fixed;
         bottom: 0px;
         width: 100%;

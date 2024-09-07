@@ -113,6 +113,9 @@ body .about-me .container #about-details #about-left .large-name {
   font-size: 35px;
   font-weight: 200;
 }
+body .about-me .container #about-details #about-left h2 {
+  animation: slideInLeft 0.75s ease both;
+}
 body .about-me .container #about-details #about-left p {
   color: #616161;
   font-weight: 400;
@@ -191,7 +194,7 @@ body .work-portfolio .container #portfolio-work .portfolio-display .portfolio-de
   line-height: 25px;
 }
 body footer {
-  background-color: #04c2c9;
+  background-color: #12829b;
   position: fixed;
   bottom: 0px;
   width: 100%;
