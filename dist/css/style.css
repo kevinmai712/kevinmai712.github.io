@@ -2,7 +2,6 @@ body {
   color: #12829b;
   background-color: #f5f5f5;
   margin: 0px;
-  font-family: "Martel Sans", sans-serif;
   background-size: cover;
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
@@ -21,6 +20,11 @@ body .reveal.visible {
 body .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  body .container {
+    max-width: 90%;
+  }
 }
 body .scrolled {
   opacity: 1;
@@ -105,9 +109,19 @@ body .about-me .container #about-details {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 865px) {
+  body .about-me .container #about-details {
+    flex-direction: column-reverse;
+  }
+}
 body .about-me .container #about-details #about-left {
   width: 60%;
   font-weight: 100;
+}
+@media (max-width: 865px) {
+  body .about-me .container #about-details #about-left {
+    width: 100%;
+  }
 }
 body .about-me .container #about-details #about-left .large-name {
   font-size: 35px;
@@ -172,6 +186,11 @@ body .work-portfolio .container #portfolio-work .portfolio-display {
   display: flex;
   flex-direction: column;
   min-height: 600px;
+}
+@media (max-width: 865px) {
+  body .work-portfolio .container #portfolio-work .portfolio-display {
+    width: 100%;
+  }
 }
 body .work-portfolio .container #portfolio-work .portfolio-display .portfolio-image {
   width: 100%;

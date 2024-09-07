@@ -4,14 +4,13 @@ $accentcolor: #36da5a;
 $white: #fff;
 $black: #000;
 $textcolor: #616161;
+$layout-breakpoint-large: 1200px;
+$layout-breakpoint-tablet: 865px;
 
 body{
     color: $primarycolor;
     background-color: #f5f5f5;
     margin: 0px;
-    //height: 2000px;
-    font-family: 'Martel Sans', sans-serif;
-    //background-image: url(../images/filler.png);
     background-size: cover;
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
@@ -29,6 +28,9 @@ body{
     .container{
         max-width: 1200px;
         margin: 0 auto;
+        @media (max-width: $layout-breakpoint-large) {
+            max-width: 90%;
+          }
     }
     .scrolled{
         opacity: 1;
@@ -117,9 +119,15 @@ body{
                 flex-direction: row;
                 justify-content: space-between;
                 align-items: center;
+                @media (max-width: $layout-breakpoint-tablet) {
+                    flex-direction: column-reverse;
+                  }
                 #about-left{
                     width: 60%;
                     font-weight: 100;
+                    @media (max-width: $layout-breakpoint-tablet) {
+                        width: 100%;
+                    }
                     .large-name{
                         font-size: 35px;
                         font-weight: 200;
@@ -188,6 +196,9 @@ body{
                     display: flex;
                     flex-direction: column;
                     min-height: 600px;
+                    @media (max-width: $layout-breakpoint-tablet) {
+                        width: 100%;
+                    }
                     .portfolio-image{
                         width: 100%;
                         min-height: 350px;
