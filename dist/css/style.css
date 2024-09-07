@@ -22,6 +22,10 @@ body .container {
   max-width: 1200px;
   margin: 0 auto;
 }
+body .scrolled {
+  opacity: 1;
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
 body header {
   position: fixed;
   width: 100%;
@@ -30,6 +34,8 @@ body header {
   z-index: 1000;
   background: #36da5a;
   height: 80px;
+  opacity: 0;
+  transition: opacity 0.6s ease-in, transform 0.6s ease-in;
 }
 body header .container {
   max-width: 1024px;
@@ -53,8 +59,7 @@ body header .container .top .top-navi a {
 }
 body .hero {
   background-color: #12829b;
-  height: 500px;
-  margin-top: 80px;
+  height: 100vh;
   display: flex;
   align-items: center;
   color: #fff;
@@ -67,15 +72,28 @@ body .hero .container {
 body .hero .container .hero-flex {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 body .hero .container .hero-flex .hero-left {
-  width: 60%;
+  text-align: center;
 }
 body .hero .container .hero-flex .hero-left .large-name {
   font-size: 35px;
   font-weight: 600;
+}
+body .hero .container .hero-flex .hero-left .resume-button {
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 10px 15px;
+  color: #fff;
+  margin-top: 20px;
+  border-radius: 15px;
+  font-weight: 500;
+}
+body .hero .container .hero-flex .hero-left .resume-button:hover {
+  background-color: #36da5a;
+  transition: ease-in 0.3s;
 }
 body .about-me {
   min-height: 500px;
@@ -97,6 +115,21 @@ body .about-me .container #about-details #about-left .large-name {
 }
 body .about-me .container #about-details #about-left p {
   color: #616161;
+  font-weight: 400;
+  line-height: 25px;
+}
+body .about-me .container #about-details #about-left .resume-button {
+  text-decoration: none;
+  border: 2px solid #12829b;
+  padding: 10px 15px;
+  color: #12829b;
+  margin-top: 20px;
+  border-radius: 15px;
+  font-weight: 500;
+}
+body .about-me .container #about-details #about-left .resume-button:hover {
+  background-color: #36da5a;
+  transition: ease-in 0.3s;
 }
 body .about-me .container #about-details #about-right {
   width: 35%;
@@ -154,12 +187,17 @@ body .work-portfolio .container #portfolio-work .portfolio-display .portfolio-de
   margin-block-start: 0px;
   margin-block-end: 0px;
 }
+body .work-portfolio .container #portfolio-work .portfolio-display .portfolio-details p {
+  line-height: 25px;
+}
 body footer {
   background-color: #04c2c9;
   position: fixed;
   bottom: 0px;
   width: 100%;
   margin: 0 auto;
+  opacity: 0;
+  transition: opacity 0.6s ease-in, transform 0.6s ease-in;
 }
 body footer p {
   text-align: center;

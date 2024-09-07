@@ -1,18 +1,11 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const sections = document.querySelectorAll('.reveal');
-  
-    const observer = new IntersectionObserver((entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target); 
+$(document).ready(function (){
+
+    $(window).scroll(function (){
+        if($(document).scrollTop() > 200){
+            $("header, footer").addClass('scrolled');
+        } else if($(document).scrollTop() < 200){
+            $("header, footer").removeClass('scrolled');
         }
-      });
-    }, {
-      threshold: 0.1
     });
-  
-    sections.forEach(section => {
-      observer.observe(section);
-    });
-  });
+    
+});
