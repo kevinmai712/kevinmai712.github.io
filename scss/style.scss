@@ -3,8 +3,11 @@ $primarycolor:#12829b;
 $accentcolor: #36da5a;
 $white: #fff;
 $black: #000;
+$textcolor: #616161;
+
 body{
     color: $primarycolor;
+    background-color: #f5f5f5;
     margin: 0px;
     //height: 2000px;
     font-family: 'Martel Sans', sans-serif;
@@ -14,13 +17,18 @@ body{
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    .reveal {
+        opacity: 0;
+        transform: translateY(100px);
+        transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
     .container{
         max-width: 1200px;
         margin: 0 auto;
-    }
-    h3{
-        margin: 0px;
-        text-align: center;
     }
     header{
         //background: transparent;
@@ -53,11 +61,12 @@ body{
         }
     }
     .hero{
-        //background-color: #81a3cd;
+        background-color: $primarycolor;
         height: 500px;
         margin-top: 80px;
         display: flex;
         align-items: center;
+        color: $white;
         .container{
             max-width: 1024px;
             margin: 0 auto;
@@ -79,8 +88,8 @@ body{
         }
     }
     .about-me{
-        //background-color: aliceblue;
-        min-height: 450px;
+        min-height: 500px;
+        padding: 40px 0px;
         .container{
             #about-details{
                 display: flex;
@@ -118,7 +127,7 @@ body{
         }
     }
     .skills{
-        background: #81a3cd;
+        //background: #81a3cd;
         min-height: 450px;
     }
 
@@ -128,6 +137,9 @@ body{
         padding-bottom: 100px;
         font-size: 14px;
         .container{
+            h2{
+                font-size: 34px;
+            }
             #portfolio-work{
                 display: flex;
                 flex-wrap: wrap;
@@ -148,6 +160,7 @@ body{
                     .portfolio-details{
                         width: 100%;
                         //margin: 0px 20px 0px 20px;
+                        color: $textcolor;
                         h2{
                             margin: 0;
                             margin-block-start: 0px;
