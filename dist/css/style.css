@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #12829b;
   background-color: #f5f5f5;
@@ -7,6 +11,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 body .reveal {
   opacity: 0;
@@ -99,43 +104,43 @@ body .hero .container .hero-flex .hero-left .resume-button:hover {
   background-color: #36da5a;
   transition: ease-in 0.3s;
 }
-body .about-me {
+body #about-me {
   min-height: 500px;
   padding: 40px 0px;
 }
-body .about-me .container #about-details {
+body #about-me .container #about-details {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
 @media (max-width: 865px) {
-  body .about-me .container #about-details {
+  body #about-me .container #about-details {
     flex-direction: column-reverse;
   }
 }
-body .about-me .container #about-details #about-left {
+body #about-me .container #about-details #about-left {
   width: 60%;
   font-weight: 100;
 }
 @media (max-width: 865px) {
-  body .about-me .container #about-details #about-left {
+  body #about-me .container #about-details #about-left {
     width: 100%;
   }
 }
-body .about-me .container #about-details #about-left .large-name {
+body #about-me .container #about-details #about-left .large-name {
   font-size: 35px;
   font-weight: 200;
 }
-body .about-me .container #about-details #about-left h2 {
+body #about-me .container #about-details #about-left h2 {
   animation: slideInLeft 0.75s ease both;
 }
-body .about-me .container #about-details #about-left p {
+body #about-me .container #about-details #about-left p {
   color: #616161;
   font-weight: 400;
   line-height: 25px;
 }
-body .about-me .container #about-details #about-left .resume-button {
+body #about-me .container #about-details #about-left .resume-button {
   text-decoration: none;
   border: 2px solid #12829b;
   padding: 10px 15px;
@@ -144,23 +149,23 @@ body .about-me .container #about-details #about-left .resume-button {
   border-radius: 15px;
   font-weight: 500;
 }
-body .about-me .container #about-details #about-left .resume-button:hover {
+body #about-me .container #about-details #about-left .resume-button:hover {
   background-color: #36da5a;
   transition: ease-in 0.3s;
 }
-body .about-me .container #about-details #about-right {
+body #about-me .container #about-details #about-right {
   width: 35%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-body .about-me .container #about-details #about-right:before {
+body #about-me .container #about-details #about-right:before {
   content: "";
   background-color: rgba(51, 83, 132, 0);
   border-radius: 100px;
   transition: all ease 0.2s;
 }
-body .about-me .container #about-details #about-right img {
+body #about-me .container #about-details #about-right img {
   border-radius: 200px;
   width: 100%;
 }
