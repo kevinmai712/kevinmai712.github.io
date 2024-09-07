@@ -52,6 +52,9 @@ body{
         opacity: 0;
         transition: opacity 0.6s ease-in, 
         transform 0.6s ease-in;
+        @media (max-width: $layout-breakpoint-tablet) {
+           display: none !important;
+          }
         .container{
             max-width: 1024px;
             margin: 0 auto;
@@ -143,6 +146,14 @@ body{
                         font-weight: 400;
                         line-height: 25px;
                     }
+                    i{
+                        padding-left: 5px;
+                    }
+                    a{
+                        i{
+                            padding-left: 5px;
+                        }
+                    }
                     .resume-button{
                         text-decoration: none;
                         border: 2px solid $primarycolor;
@@ -154,6 +165,11 @@ body{
                         &:hover{
                             background-color: $accentcolor;
                             transition: ease-in .3s;
+                            color: $white;
+                            border: 2px solid $white;
+                        }
+                        i{
+                            padding-left: 5px;
                         }
                     }
                 }

@@ -46,6 +46,11 @@ body header {
   opacity: 0;
   transition: opacity 0.6s ease-in, transform 0.6s ease-in;
 }
+@media (max-width: 865px) {
+  body header {
+    display: none !important;
+  }
+}
 body header .container {
   max-width: 1024px;
   margin: 0 auto;
@@ -140,6 +145,12 @@ body #about-me .container #about-details #about-left p {
   font-weight: 400;
   line-height: 25px;
 }
+body #about-me .container #about-details #about-left i {
+  padding-left: 5px;
+}
+body #about-me .container #about-details #about-left a i {
+  padding-left: 5px;
+}
 body #about-me .container #about-details #about-left .resume-button {
   text-decoration: none;
   border: 2px solid #12829b;
@@ -152,6 +163,11 @@ body #about-me .container #about-details #about-left .resume-button {
 body #about-me .container #about-details #about-left .resume-button:hover {
   background-color: #36da5a;
   transition: ease-in 0.3s;
+  color: #fff;
+  border: 2px solid #fff;
+}
+body #about-me .container #about-details #about-left .resume-button i {
+  padding-left: 5px;
 }
 body #about-me .container #about-details #about-right {
   width: 35%;
