@@ -218,9 +218,26 @@ body{
                     @media (max-width: $layout-breakpoint-tablet) {
                         width: 100%;
                     }
+                    h3{
+                        font-size: 20px;
+                        text-decoration: none;
+                        transition: all ease 0.2s;
+                        :hover{
+                            color: $accentcolor;
+                            transition: all ease 0.2s;
+                        }
+                        a{
+                            text-decoration: none;
+                            color: $primarycolor;
+                            font-size: 20px;
+                            :hover{
+                                color: $accentcolor;
+                            }
+                        }
+                    }
                     .portfolio-image{
                         width: 100%;
-                        min-height: 350px;
+                        min-height: 285px;
                         img{
                             width: 100%;
                             height: auto;
@@ -230,6 +247,53 @@ body{
                         width: 100%;
                         //margin: 0px 20px 0px 20px;
                         color: $textcolor;
+                        .code-language{
+                            display: flex;
+                            padding: 10px 0px;
+                            ul{
+                                display: flex;
+                                flex-direction: row;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding-inline-start: 0px;
+                                li{
+                                    list-style: none;
+                                    transition: all ease 0.2s;
+                                    :hover{
+                                        transition: all ease 0.2s;
+                                    }
+                                    .wordpress{
+                                        background-color: #3858e9;
+                                        :hover{
+                                            background-color: #6981ea;
+                                            transition: all ease 0.2s;
+                                        }
+                                    }
+                                    .scss{
+                                        background-color: #bf4080;
+                                    }
+                                    .php{
+                                        background-color: #4f5b93;
+                                    }
+                                    .twig{
+                                        background-color: #bacf29;
+                                    }
+                                    a{
+                                        text-decoration: none;
+                                        color: $white;
+                                        padding: 0.5em 1em;
+                                        border-radius: 3px;
+                                        margin: 0 2px;
+                                        background-color: $primarycolor;
+                                        transition: all ease 0.2s;
+                                        :hover{
+                                            background-color: $accentcolor;
+                                            transition: all ease 0.2s;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                         h2{
                             margin: 0;
                             margin-block-start: 0px;

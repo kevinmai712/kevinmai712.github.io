@@ -213,9 +213,26 @@ body .work-portfolio .container #portfolio-work .portfolio-display {
     width: 100%;
   }
 }
+body .work-portfolio .container #portfolio-work .portfolio-display h3 {
+  font-size: 20px;
+  text-decoration: none;
+  transition: all ease 0.2s;
+}
+body .work-portfolio .container #portfolio-work .portfolio-display h3 :hover {
+  color: #36da5a;
+  transition: all ease 0.2s;
+}
+body .work-portfolio .container #portfolio-work .portfolio-display h3 a {
+  text-decoration: none;
+  color: #12829b;
+  font-size: 20px;
+}
+body .work-portfolio .container #portfolio-work .portfolio-display h3 a :hover {
+  color: #36da5a;
+}
 body .work-portfolio .container #portfolio-work .portfolio-display .portfolio-image {
   width: 100%;
-  min-height: 350px;
+  min-height: 285px;
 }
 body .work-portfolio .container #portfolio-work .portfolio-display .portfolio-image img {
   width: 100%;
@@ -224,6 +241,53 @@ body .work-portfolio .container #portfolio-work .portfolio-display .portfolio-im
 body .work-portfolio .container #portfolio-work .portfolio-display .portfolio-details {
   width: 100%;
   color: #616161;
+}
+body .work-portfolio .container #portfolio-work .portfolio-display .portfolio-details .code-language {
+  display: flex;
+  padding: 10px 0px;
+}
+body .work-portfolio .container #portfolio-work .portfolio-display .portfolio-details .code-language ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline-start: 0px;
+}
+body .work-portfolio .container #portfolio-work .portfolio-display .portfolio-details .code-language ul li {
+  list-style: none;
+  transition: all ease 0.2s;
+}
+body .work-portfolio .container #portfolio-work .portfolio-display .portfolio-details .code-language ul li :hover {
+  transition: all ease 0.2s;
+}
+body .work-portfolio .container #portfolio-work .portfolio-display .portfolio-details .code-language ul li .wordpress {
+  background-color: #3858e9;
+}
+body .work-portfolio .container #portfolio-work .portfolio-display .portfolio-details .code-language ul li .wordpress :hover {
+  background-color: #6981ea;
+  transition: all ease 0.2s;
+}
+body .work-portfolio .container #portfolio-work .portfolio-display .portfolio-details .code-language ul li .scss {
+  background-color: #bf4080;
+}
+body .work-portfolio .container #portfolio-work .portfolio-display .portfolio-details .code-language ul li .php {
+  background-color: #4f5b93;
+}
+body .work-portfolio .container #portfolio-work .portfolio-display .portfolio-details .code-language ul li .twig {
+  background-color: #bacf29;
+}
+body .work-portfolio .container #portfolio-work .portfolio-display .portfolio-details .code-language ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: 3px;
+  margin: 0 2px;
+  background-color: #12829b;
+  transition: all ease 0.2s;
+}
+body .work-portfolio .container #portfolio-work .portfolio-display .portfolio-details .code-language ul li a :hover {
+  background-color: #36da5a;
+  transition: all ease 0.2s;
 }
 body .work-portfolio .container #portfolio-work .portfolio-display .portfolio-details h2 {
   margin: 0;
