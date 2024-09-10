@@ -1,15 +1,15 @@
-$(document).ready(function (){
+$(document).ready(function () {
 
-    $(window).scroll(function (){
-        if($(document).scrollTop() > 200){
+    $(window).scroll(function () {
+        if ($(document).scrollTop() > 10) {
             $("header, footer").addClass('scrolled');
-        } else if($(document).scrollTop() < 200){
+        } else if ($(document).scrollTop() < 10) {
             $("header, footer").removeClass('scrolled');
         }
     });
 
     VANTA.WAVES({
-        el: ".hero",
+        el: "#hero",
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
@@ -22,6 +22,21 @@ $(document).ready(function (){
         waveHeight: 5.50,
         waveSpeed: 0.10,
         zoom: 1
-      })
+    });
 
+ 
+    const progressBars = document.querySelectorAll('.fill');
+    function checkScroll() {
+        progressBars.forEach(function (bar) {
+            const barTop = bar.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+
+            if (barTop < windowHeight - 50) {
+                const fillPercent = bar.getAttribute('data-fill');
+                bar.style.width = fillPercent;
+            }
+        });
+    }
+     $(window).on('scroll', checkScroll);
+    checkScroll(); 
 });
