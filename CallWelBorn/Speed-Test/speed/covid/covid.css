@@ -1,0 +1,137 @@
+/******** COVID ***********/
+#pop-up-ccpa{
+    display: block;
+    align-items: flex-start;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1000;
+    width: 100%;
+    transition: .5s ease-in-out;    
+    font-family: 'Open Sans', sans-serif;
+}
+
+#pop-up-main{
+    background: #079a51;
+    width: 100%;
+    height: 36px;
+    transition: .5s ease-in-out;
+}
+
+#ccpa-pop-up{
+    margin: 0 auto;
+}
+
+#close-ccpa{
+font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    width: 3%;
+    padding: 5px 0px;
+    margin: 0 auto;
+}
+#fixed-quotes{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+#fixed-quote{
+    color: #fff;
+    width: 97%;
+    line-height: 1.2;
+    font-size: 14px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    padding: 10px 0px;
+}
+
+#fixed-name{
+font-weight: bolder;
+    color: #fff;
+    position: relative;
+    top: 40px;
+}
+
+#pop-up-covid{
+z-index: 2000;
+    background: rgba(0, 0, 0, 0.73);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0px;
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#covid-more{
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+#pop-up-covid-message{
+    width: 30%;
+    color: #555;
+    background-color: #fff;
+    margin: 0 auto;
+    border-radius: 15px;
+    position: relative;
+    height: auto;
+    top: 10%;
+    overflow: auto;
+}
+
+#covid-message{
+	padding: 40px 0px;
+}
+
+#covid-message ul{
+    line-height: 120%;
+    font-family: 'Open Sans', sans-serif;
+    color: #555;
+    list-style-type: disc;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#covid-message li{
+        display: list-item;
+    text-align: -webkit-match-parent;
+    margin: 0 0 15px 25px;
+}
+
+#pop-up-covid-message p{
+	width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    line-height: 120%;
+    padding: 25px 0px 10px 10px;
+        font-family: 'Open Sans', sans-serif;
+
+}
+
+#close-covid-message{
+    display: block;
+    text-decoration: none;
+    color: #555;
+    width: 29%;
+    padding: 5px 0;
+    font-size: 1.3em;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 400;    
+    font-family: 'Open Sans', sans-serif;
+    border: 2px solid #555;
+    float: right;
+    top: 6px;
+    right: 20px;
+    position: relative;
+}
